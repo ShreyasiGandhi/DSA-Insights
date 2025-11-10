@@ -53,7 +53,7 @@ public int removeDuplicatesBruteForce(int[] nums) {
     }
     return index;
 }
-
+```
 
 ##Approach 2: Two Pointer (Optimized)
 __Idea:__
@@ -69,6 +69,7 @@ Replace nums[i+1] with nums[j].
 
 Time Complexity: O(n)
 Space Complexity: O(1)
+```
 public int removeDuplicatesTwoPointer(int[] nums) {
     if (nums.length == 0) return 0;
 
@@ -81,7 +82,7 @@ public int removeDuplicatesTwoPointer(int[] nums) {
     }
     return i + 1;
 }
-
+```
 
 ##Approach 3: Using Set
 
@@ -96,7 +97,7 @@ Copy elements back to the array.
 
 Time Complexity: O(n)
 Space Complexity: O(n)
-
+```
 import java.util.*;
 
 public int removeDuplicatesUsingSet(int[] nums) {
@@ -111,6 +112,7 @@ public int removeDuplicatesUsingSet(int[] nums) {
     return set.size();
 }
 
+```
 Comparison Summary
 Approach	Time	Space	Notes
 Brute Force	O(n²)	O(1)	Easy but inefficient
